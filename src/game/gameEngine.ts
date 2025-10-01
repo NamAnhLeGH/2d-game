@@ -9,6 +9,11 @@ export class GameEngine {
   private k: any = null;
   private player: any = null;
   private map: any = null;
+  private selectedCharacter: string = 'adam';
+
+  constructor(character: string = 'adam') {
+    this.selectedCharacter = character;
+  }
 
   async initialize() {
     console.log('Initializing game engine...');
@@ -36,8 +41,8 @@ export class GameEngine {
     const { map, layers } = await loadMap(this.k);
     this.map = map;
 
-    // Create player
-    this.player = createPlayer(this.k);
+    // Create player with selected character
+    this.player = createPlayer(this.k, this.selectedCharacter);
     console.log('Player created:', this.player);
 
     // Setup collisions

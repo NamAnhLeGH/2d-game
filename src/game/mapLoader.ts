@@ -4,7 +4,7 @@ import { displayDialogue } from '../utils';
 
 export const loadMap = async (k: any) => {
   console.log('Loading map data...');
-  const mapData = await (await fetch("/map.json")).json();
+  const mapData = await (await fetch("/labroom.json")).json();
   console.log('Map data loaded:', mapData);
   
   const layers = mapData.layers;
@@ -40,7 +40,7 @@ export const setupCollisions = (k: any, map: any, player: any, layers: any[]) =>
       continue;
     }
 
-    if (layer.name === "spawnpoints") {
+    if (layer.name === "spawn points") {
       for (const entity of layer.objects) {
         if (entity.name === "player") {
           player.pos = k.vec2(

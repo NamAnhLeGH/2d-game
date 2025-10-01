@@ -1,23 +1,25 @@
-export const scaleFactor = 4;
+export const scaleFactor = 1.5; // Normal scale for furniture
+export const characterScaleFactor = 2.0; // Characters are 2x bigger than normal (1.5 * 2 = 3.0)
 
 export const dialogueData = {
-  pc: `This is my PC. I work mostly in JavaScript/TypeScript these days.
-    I've made a couple of games in that language. I also like Golang and Python. Anyway regardless of the language, I just like programming.
-    Here is my <a href="https://github.com/jslegenddev" target="_blank">Github</a>!`,
-  "cs-degree": `This is my CS degree. I hung it on the wall because I'm proud of it. It was a very theoretical degree but I think it gave me a good foundation.`,
-  "sofa-table": `That's my sofa. I like to relax here and watch YouTube. 
-  I also make game programming tutorials on YouTube. Go sub to <a href="https://youtube.com/@jslegenddev" target="_blank">my channel</a>! (If you like the content)
-  You'll learn how I built this portfolio you're currently playing through!`,
-  tv: `That's my TV. I've been watching tech youtubers a lot recently like :
-   <a href="https://www.youtube.com/@ThePrimeTimeagen" target="_blank">Theprimeagen</a>, <a href="https://www.youtube.com/@t3dotgg" target="_blank">Theo - t3.gg</a>,
-  <a href="https://www.youtube.com/@PirateSoftware" target="_blank">PirateSoftware</a> (sometimes) and <a href="https://www.youtube.com/@MelkeyDev" target="_blank">Melkey</a>!`,
-  bed: `This where I sleep. Great ideas comes when I'm lying on my bed. When an idea strikes, I often have to write it down or else I won't be able to sleep because my mental energy is consumed by it.`,
-  resume: `This is my desk and on it is my resume. <a href="https://github.com/JSLegendDev/Resume/blob/main/JSLegend%20Resume-1.pdf" target="_blank">Check it out?</a>
-  Contact me at jslegend@protonmail.com if you have any interesting job opportunities!`,
-  projects: `Info about this portfolio : It's made with the Kaboom.js library which is a library for making games in JavaScript.
-  Text is rendered with HTML/CSS. So the textbox you're currently reading is not rendered within canvas. Learn more about how to use
-  Kaboom.js by watching some of my tutorials <a href="https://youtube.com/@jslegenddev" target="_blank">here</a>.`,
-  library: `There are a lot of programming books on my shelves. There is even one in French (I also speak French btw).
-  I probably only read one of them. Who else compulsively buys technical books without ever finishing them?`,
-  exit: `If you want to exit JSLegendDev's portfolio, just close the tab.`,
+  computer: `This is a computer workstation in the lab. Perfect for coding and development work.
+    I spend most of my time here working on projects and learning new technologies.`,
+  "task board": `This is the task board where we track our project progress and assignments.
+    It helps keep the team organized and focused on our goals.`,
+  tv: `This is the lab's display screen. We use it for presentations, demos, and sometimes just to relax.
+    Great for showing off our latest projects to visitors!`,
+  door: `This is the main entrance to the lab. It's where we welcome new team members and visitors.
+    The lab is always open for collaboration and learning.`,
+  "middle table": `This is the central collaboration table. We gather here for team meetings, brainstorming sessions,
+    and group coding sessions. It's the heart of our lab community.`,
+  "right table": `This is a dedicated workspace table. Perfect for individual work or small group projects.
+    Each table has its own character and purpose in our lab.`,
+  "left table": `Another workspace table in our lab. This one is often used for hardware projects and experiments.
+    We've built some amazing things on this table!`,
+  "left wall": `The left wall of our lab. It's covered with project posters, achievement certificates,
+    and inspirational quotes that keep us motivated.`,
+  "right wall": `The right wall features our project showcase and timeline of major accomplishments.
+    It's a constant reminder of how far we've come and where we're heading.`,
+  "front wall": `The front wall displays our lab's mission statement and current project goals.
+    It helps keep everyone aligned and focused on our shared vision.`,
 };
